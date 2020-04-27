@@ -1,0 +1,1083 @@
+package com.adin.caedu.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.adin.caedu.util.GsonConverter;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Entity(name = "VUC")
+@Table(name = "VUC", schema = "crm")
+public class DB_VucModel {
+ 
+	@SerializedName("RIID")
+	@Expose
+	Integer RIID = null;
+	@SerializedName("CODIGO_CLIENTE")
+	@Expose
+	Integer CODIGO_CLIENTE = null;
+	@SerializedName("PRIMEIRO_NOME")
+	@Expose
+	String PRIMEIRO_NOME = null;
+	@SerializedName("ULTIMO_NOME")
+	@Expose
+	String ULTIMO_NOME = null;
+	@SerializedName("EMAIL")
+	@Expose
+	String EMAIL = null;
+	@SerializedName("DDD_TELEFONE")
+	@Expose
+	String DDD_TELEFONE = null;
+	@SerializedName("TELEFONE")
+	@Expose
+	String TELEFONE = null;
+	@SerializedName("TIPO_TELEFONE")
+	@Expose
+	String TIPO_TELEFONE = null;
+	@SerializedName("CPF")
+	@Expose
+	@Id
+	String CPF = null;
+	@SerializedName("DATA_NASCIMENTO")
+	@Expose
+	String DATA_NASCIMENTO = null; // xx
+	@SerializedName("IDADE")
+	@Expose
+	Integer IDADE = null;
+	@SerializedName("TIPO_ENDERECO")
+	@Expose
+	String TIPO_ENDERECO = null;
+	@SerializedName("TIPO_LOGRADOURO")
+	@Expose
+	String TIPO_LOGRADOURO = null;
+	@SerializedName("LOGRADOURO")
+	@Expose
+	String LOGRADOURO = null;
+	@SerializedName("NUMERO")
+	@Expose
+	String NUMERO = null;
+	@SerializedName("COMPLEMENTO")
+	@Expose
+	String COMPLEMENTO = null;
+	@SerializedName("BAIRRO")
+	@Expose
+	String BAIRRO = null;
+	@SerializedName("CIDADE")
+	@Expose
+	String CIDADE = null;
+	@SerializedName("ESTADO")
+	@Expose
+	String ESTADO = null;
+	@SerializedName("CEP")
+	@Expose
+	String CEP = null;
+	@SerializedName("CATEGORIA_PREFERIDA_1")
+	@Expose
+	String CATEGORIA_PREFERIDA_1 = null;
+	@SerializedName("CATEGORIA_PREFERIDA_2")
+	@Expose
+	String CATEGORIA_PREFERIDA_2 = null;
+	@SerializedName("CATEGORIA_PREFERIDA_3")
+	@Expose
+	String CATEGORIA_PREFERIDA_3 = null;
+	@SerializedName("SUBCATEGORIA_PREFERIDA_1")
+	@Expose
+	String SUBCATEGORIA_PREFERIDA_1 = null;
+	@SerializedName("SUBCATEGORIA_PREFERIDA_2")
+	@Expose
+	String SUBCATEGORIA_PREFERIDA_2 = null;
+	@SerializedName("SUBCATEGORIA_PREFERIDA_3")
+	@Expose
+	String SUBCATEGORIA_PREFERIDA_3 = null;
+	@SerializedName("GENERO_PREFERENCIAL_1")
+	@Expose
+	String GENERO_PREFERENCIAL_1 = null;
+	@SerializedName("GENERO_PREFERENCIAL_2")
+	@Expose
+	String GENERO_PREFERENCIAL_2 = null;
+	@SerializedName("GENERO_PREFERENCIAL_3")
+	@Expose
+	String GENERO_PREFERENCIAL_3 = null;
+	@SerializedName("ESTILO_PREFERENCIAL_1")
+	@Expose
+	String ESTILO_PREFERENCIAL_1 = null;
+	@SerializedName("ESTILO_PREFERENCIAL_2")
+	@Expose
+	String ESTILO_PREFERENCIAL_2 = null;
+	@SerializedName("ESTILO_PREFERENCIAL_3")
+	@Expose
+	String ESTILO_PREFERENCIAL_3 = null;
+	@SerializedName("R_TRANSACAO")
+	@Expose
+	String R_TRANSACAO = null;
+	@SerializedName("F_TRANSACAO")
+	@Expose
+	String F_TRANSACAO = null;
+	@SerializedName("V_TRANSACAO")
+	@Expose
+	String V_TRANSACAO = null;
+	@SerializedName("CLASSIFICACAO_RFV_TRANSACAO")
+	@Expose
+	String CLASSIFICACAO_RFV_TRANSACAO = null;
+	@SerializedName("TKM")
+	@Expose
+	String TKM = null;
+	@SerializedName("PAGAMENTO_PREFERENCIAL")
+	@Expose
+	String PAGAMENTO_PREFERENCIAL = null;
+	@SerializedName("NUMERO_CHAMADO")
+	@Expose
+	String NUMERO_CHAMADO = null;
+	@SerializedName("TIPO_CHAMADO")
+	@Expose
+	String TIPO_CHAMADO = null;
+	@SerializedName("STATUS_CHAMADO")
+	@Expose
+	String STATUS_CHAMADO = null;
+	@SerializedName("NUMERO_CARTAO")
+	@Expose
+	Integer NUMERO_CARTAO = null;
+	@SerializedName("CARTAO_ATIVO")
+	@Expose
+	String CARTAO_ATIVO = null;
+	@SerializedName("DATA_ATIVACAO_CARTAO")
+	@Expose
+	String DATA_ATIVACAO_CARTAO = null;
+	@SerializedName("STATUS_1_COMPRA")
+	@Expose
+	String STATUS_1_COMPRA = null;
+	@SerializedName("DATA_1_COMPRA")
+	@Expose
+	String DATA_1_COMPRA = null;
+	@SerializedName("DATA_VENCIMENTO_FATURA")
+	@Expose
+	String DATA_VENCIMENTO_FATURA = null;
+	@SerializedName("FATURA_VENCIDA")
+	@Expose
+	String FATURA_VENCIDA = null;
+	@SerializedName("DATA_ULTIMA_COMPRA")
+	@Expose
+	String DATA_ULTIMA_COMPRA = null;
+	@SerializedName("PARCELA_ATUAL")
+	@Expose
+	String PARCELA_ATUAL = null;
+	@SerializedName("DATA_ULTIMA_PARCELA")
+	@Expose
+	String DATA_ULTIMA_PARCELA = null;
+	@SerializedName("SALDO_DISPONIVEL_ATUAL")
+	@Expose
+	String SALDO_DISPONIVEL_ATUAL = null;
+	@SerializedName("COMPRAS_PARCELADAS")
+	@Expose
+	String COMPRAS_PARCELADAS = null;
+	@SerializedName("STATUS_FATURA_ATUAL")
+	@Expose
+	String STATUS_FATURA_ATUAL = null;
+	@SerializedName("R_CARTAO")
+	@Expose
+	String R_CARTAO = null;
+	@SerializedName("F_CARTAO")
+	@Expose
+	String F_CARTAO = null;
+	@SerializedName("V_CARTAO")
+	@Expose
+	String V_CARTAO = null;
+	@SerializedName("CLASSIFICACAO_RFV_CARTAO")
+	@Expose
+	String CLASSIFICACAO_RFV_CARTAO = null;
+	@SerializedName("CARTOES_ADICIONAIS_1")
+	@Expose
+	String CARTOES_ADICIONAIS_1 = null;
+	@SerializedName("CARTOES_ADICIONAIS_2")
+	@Expose
+	String CARTOES_ADICIONAIS_2 = null;
+	@SerializedName("VJ_CLIENTE")
+	@Expose
+	String VJ_CLIENTE = null;
+	@SerializedName("VJ_DEIXOU")
+	@Expose
+	String VJ_DEIXOU = null;
+	@SerializedName("VJ_TROCA_FINANCIAMENTO")
+	@Expose
+	String VJ_TROCA_FINANCIAMENTO = null;
+	@SerializedName("VJ_PARCELA_ANTIGA")
+	@Expose
+	String VJ_PARCELA_ANTIGA = null;
+	@SerializedName("VJ_PARCELA_NOVA")
+	@Expose
+	String VJ_PARCELA_NOVA = null;
+	@SerializedName("VJ_ULTIMO_12_MESES")
+	@Expose
+	String VJ_ULTIMO_12_MESES = null;
+	@SerializedName("VJ_ULTIMA_CLIENTE")
+	@Expose
+	String VJ_ULTIMA_CLIENTE = null;
+	@SerializedName("SEGURO_CELULAR")
+	@Expose
+	String SEGURO_CELULAR = null;
+	@SerializedName("INICIO_VIGENCIA_SEGURO_CELULAR")
+	@Expose
+	String INICIO_VIGENCIA_SEGURO_CELULAR = null;
+	@SerializedName("FIM_VIGENCIA_SEGURO_CELULAR")
+	@Expose
+	String FIM_VIGENCIA_SEGURO_CELULAR = null;
+	@SerializedName("SEGURO_ODONTOLOGICO")
+	@Expose
+	String SEGURO_ODONTOLOGICO = null;
+	@SerializedName("INICIO_VIGENCIA_SEGURO_ODONTO")
+	@Expose
+	String INICIO_VIGENCIA_SEGURO_ODONTO = null;
+	@SerializedName("FIM_VIGENCIA_SEGURO_ODONTO")
+	@Expose
+	String FIM_VIGENCIA_SEGURO_ODONTO = null;
+	@SerializedName("SEGURO_CASA_TRANQUILA")
+	@Expose
+	String SEGURO_CASA_TRANQUILA = null;
+	@SerializedName("INICIO_VIGENCIA_CASA_TRANQUILA")
+	@Expose
+	String INICIO_VIGENCIA_CASA_TRANQUILA = null;
+	@SerializedName("FIM_VIGENCIA_CASA_TRANQUILA")
+	@Expose
+	String FIM_VIGENCIA_CASA_TRANQUILA = null;
+	@SerializedName("SEGURO_PARCELA_PROTEGIDA")
+	@Expose
+	String SEGURO_PARCELA_PROTEGIDA = null;
+	@SerializedName("INICIO_VIGENCIA_PARCELA_PROTEG")
+	@Expose
+	String INICIO_VIGENCIA_PARCELA_PROTEG = null;
+	@SerializedName("FIM_VIGENCIA_PARCELA_PROTEGIDA")
+	@Expose
+	String FIM_VIGENCIA_PARCELA_PROTEGIDA = null;
+	@SerializedName("VALOR_GASTO")
+	@Expose
+	Integer VALOR_GASTO = null;
+	@SerializedName("QTD_TRANSACAO")
+	@Expose
+	Integer QTD_TRANSACAO = null;
+	@SerializedName("LOJA_CADASTRO")
+	@Expose
+	String LOJA_CADASTRO = null;
+	@SerializedName("GENERO")
+	@Expose
+	String GENERO = null;
+	@SerializedName("CODIGO_CLIENTE_AVANTSYS")
+	@Expose
+	String CODIGO_CLIENTE_AVANTSYS = null;
+	@SerializedName("ATUALIZACLI")
+	@Expose
+	String ATUALIZACLI = null;
+	@SerializedName("ATUALIZACLI2")
+	@Expose
+	String ATUALIZACLI2 = null;
+
+	public Integer getCODIGO_CLIENTE() {
+		return CODIGO_CLIENTE;
+	}
+
+	public void setCODIGO_CLIENTE(Integer cODIGO_CLIENTE) {
+		CODIGO_CLIENTE = cODIGO_CLIENTE;
+	}
+
+	public String getPRIMEIRO_NOME() {
+		return PRIMEIRO_NOME;
+	}
+
+	public void setPRIMEIRO_NOME(String pRIMEIRO_NOME) {
+		PRIMEIRO_NOME = pRIMEIRO_NOME;
+	}
+
+	public String getULTIMO_NOME() {
+		return ULTIMO_NOME;
+	}
+
+	public void setULTIMO_NOME(String uLTIMO_NOME) {
+		ULTIMO_NOME = uLTIMO_NOME;
+	}
+
+	public String getEMAIL() {
+		return EMAIL;
+	}
+
+	public void setEMAIL(String eMAIL) {
+		EMAIL = eMAIL;
+	}
+
+	public String getDDD_TELEFONE() {
+		return DDD_TELEFONE;
+	}
+
+	public void setDDD_TELEFONE(String dDD_TELEFONE) {
+		DDD_TELEFONE = dDD_TELEFONE;
+	}
+
+	public String getTELEFONE() {
+		return TELEFONE;
+	}
+
+	public void setTELEFONE(String tELEFONE) {
+		TELEFONE = tELEFONE;
+	}
+
+	public String getTIPO_TELEFONE() {
+		return TIPO_TELEFONE;
+	}
+
+	public void setTIPO_TELEFONE(String tIPO_TELEFONE) {
+		TIPO_TELEFONE = tIPO_TELEFONE;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getDATA_NASCIMENTO() {
+		return DATA_NASCIMENTO;
+	}
+
+	public void setDATA_NASCIMENTO(String dATA_NASCIMENTO) {
+		DATA_NASCIMENTO = dATA_NASCIMENTO;
+	}
+
+	public Integer getIDADE() {
+		return IDADE;
+	}
+
+	public void setIDADE(Integer iDADE) {
+		IDADE = iDADE;
+	}
+
+	public String getTIPO_ENDERECO() {
+		return TIPO_ENDERECO;
+	}
+
+	public void setTIPO_ENDERECO(String tIPO_ENDERECO) {
+		TIPO_ENDERECO = tIPO_ENDERECO;
+	}
+
+	public String getTIPO_LOGRADOURO() {
+		return TIPO_LOGRADOURO;
+	}
+
+	public void setTIPO_LOGRADOURO(String tIPO_LOGRADOURO) {
+		TIPO_LOGRADOURO = tIPO_LOGRADOURO;
+	}
+
+	public String getLOGRADOURO() {
+		return LOGRADOURO;
+	}
+
+	public void setLOGRADOURO(String lOGRADOURO) {
+		LOGRADOURO = lOGRADOURO;
+	}
+
+	public String getNUMERO() {
+		return NUMERO;
+	}
+
+	public void setNUMERO(String nUMERO) {
+		NUMERO = nUMERO;
+	}
+
+	public String getCOMPLEMENTO() {
+		return COMPLEMENTO;
+	}
+
+	public void setCOMPLEMENTO(String cOMPLEMENTO) {
+		COMPLEMENTO = cOMPLEMENTO;
+	}
+
+	public String getBAIRRO() {
+		return BAIRRO;
+	}
+
+	public void setBAIRRO(String bAIRRO) {
+		BAIRRO = bAIRRO;
+	}
+
+	public String getCIDADE() {
+		return CIDADE;
+	}
+
+	public void setCIDADE(String cIDADE) {
+		CIDADE = cIDADE;
+	}
+
+	public String getESTADO() {
+		return ESTADO;
+	}
+
+	public void setESTADO(String eSTADO) {
+		ESTADO = eSTADO;
+	}
+
+	public String getCEP() {
+		return CEP;
+	}
+
+	public void setCEP(String cEP) {
+		CEP = cEP;
+	}
+
+	public String getCATEGORIA_PREFERIDA_1() {
+		return CATEGORIA_PREFERIDA_1;
+	}
+
+	public void setCATEGORIA_PREFERIDA_1(String cATEGORIA_PREFERIDA_1) {
+		CATEGORIA_PREFERIDA_1 = cATEGORIA_PREFERIDA_1;
+	}
+
+	public String getCATEGORIA_PREFERIDA_2() {
+		return CATEGORIA_PREFERIDA_2;
+	}
+
+	public void setCATEGORIA_PREFERIDA_2(String cATEGORIA_PREFERIDA_2) {
+		CATEGORIA_PREFERIDA_2 = cATEGORIA_PREFERIDA_2;
+	}
+
+	public String getCATEGORIA_PREFERIDA_3() {
+		return CATEGORIA_PREFERIDA_3;
+	}
+
+	public void setCATEGORIA_PREFERIDA_3(String cATEGORIA_PREFERIDA_3) {
+		CATEGORIA_PREFERIDA_3 = cATEGORIA_PREFERIDA_3;
+	}
+
+	public String getSUBCATEGORIA_PREFERIDA_1() {
+		return SUBCATEGORIA_PREFERIDA_1;
+	}
+
+	public void setSUBCATEGORIA_PREFERIDA_1(String sUBCATEGORIA_PREFERIDA_1) {
+		SUBCATEGORIA_PREFERIDA_1 = sUBCATEGORIA_PREFERIDA_1;
+	}
+
+	public String getSUBCATEGORIA_PREFERIDA_2() {
+		return SUBCATEGORIA_PREFERIDA_2;
+	}
+
+	public void setSUBCATEGORIA_PREFERIDA_2(String sUBCATEGORIA_PREFERIDA_2) {
+		SUBCATEGORIA_PREFERIDA_2 = sUBCATEGORIA_PREFERIDA_2;
+	}
+
+	public String getSUBCATEGORIA_PREFERIDA_3() {
+		return SUBCATEGORIA_PREFERIDA_3;
+	}
+
+	public void setSUBCATEGORIA_PREFERIDA_3(String sUBCATEGORIA_PREFERIDA_3) {
+		SUBCATEGORIA_PREFERIDA_3 = sUBCATEGORIA_PREFERIDA_3;
+	}
+
+	public String getGENERO_PREFERENCIAL_1() {
+		return GENERO_PREFERENCIAL_1;
+	}
+
+	public void setGENERO_PREFERENCIAL_1(String gENERO_PREFERENCIAL_1) {
+		GENERO_PREFERENCIAL_1 = gENERO_PREFERENCIAL_1;
+	}
+
+	public String getGENERO_PREFERENCIAL_2() {
+		return GENERO_PREFERENCIAL_2;
+	}
+
+	public void setGENERO_PREFERENCIAL_2(String gENERO_PREFERENCIAL_2) {
+		GENERO_PREFERENCIAL_2 = gENERO_PREFERENCIAL_2;
+	}
+
+	public String getGENERO_PREFERENCIAL_3() {
+		return GENERO_PREFERENCIAL_3;
+	}
+
+	public void setGENERO_PREFERENCIAL_3(String gENERO_PREFERENCIAL_3) {
+		GENERO_PREFERENCIAL_3 = gENERO_PREFERENCIAL_3;
+	}
+
+	public String getESTILO_PREFERENCIAL_1() {
+		return ESTILO_PREFERENCIAL_1;
+	}
+
+	public void setESTILO_PREFERENCIAL_1(String eSTILO_PREFERENCIAL_1) {
+		ESTILO_PREFERENCIAL_1 = eSTILO_PREFERENCIAL_1;
+	}
+
+	public String getESTILO_PREFERENCIAL_2() {
+		return ESTILO_PREFERENCIAL_2;
+	}
+
+	public void setESTILO_PREFERENCIAL_2(String eSTILO_PREFERENCIAL_2) {
+		ESTILO_PREFERENCIAL_2 = eSTILO_PREFERENCIAL_2;
+	}
+
+	public String getESTILO_PREFERENCIAL_3() {
+		return ESTILO_PREFERENCIAL_3;
+	}
+
+	public void setESTILO_PREFERENCIAL_3(String eSTILO_PREFERENCIAL_3) {
+		ESTILO_PREFERENCIAL_3 = eSTILO_PREFERENCIAL_3;
+	}
+
+	public String getR_TRANSACAO() {
+		return R_TRANSACAO;
+	}
+
+	public void setR_TRANSACAO(String r_TRANSACAO) {
+		R_TRANSACAO = r_TRANSACAO;
+	}
+
+	public String getF_TRANSACAO() {
+		return F_TRANSACAO;
+	}
+
+	public void setF_TRANSACAO(String f_TRANSACAO) {
+		F_TRANSACAO = f_TRANSACAO;
+	}
+
+	public String getV_TRANSACAO() {
+		return V_TRANSACAO;
+	}
+
+	public void setV_TRANSACAO(String v_TRANSACAO) {
+		V_TRANSACAO = v_TRANSACAO;
+	}
+
+	public String getCLASSIFICACAO_RFV_TRANSACAO() {
+		return CLASSIFICACAO_RFV_TRANSACAO;
+	}
+
+	public void setCLASSIFICACAO_RFV_TRANSACAO(String cLASSIFICACAO_RFV_TRANSACAO) {
+		CLASSIFICACAO_RFV_TRANSACAO = cLASSIFICACAO_RFV_TRANSACAO;
+	}
+
+	public String getTKM() {
+		return TKM;
+	}
+
+	public void setTKM(String tKM) {
+		TKM = tKM;
+	}
+
+	public String getPAGAMENTO_PREFERENCIAL() {
+		return PAGAMENTO_PREFERENCIAL;
+	}
+
+	public void setPAGAMENTO_PREFERENCIAL(String pAGAMENTO_PREFERENCIAL) {
+		PAGAMENTO_PREFERENCIAL = pAGAMENTO_PREFERENCIAL;
+	}
+
+	public String getNUMERO_CHAMADO() {
+		return NUMERO_CHAMADO;
+	}
+
+	public void setNUMERO_CHAMADO(String nUMERO_CHAMADO) {
+		NUMERO_CHAMADO = nUMERO_CHAMADO;
+	}
+
+	public String getTIPO_CHAMADO() {
+		return TIPO_CHAMADO;
+	}
+
+	public void setTIPO_CHAMADO(String tIPO_CHAMADO) {
+		TIPO_CHAMADO = tIPO_CHAMADO;
+	}
+
+	public String getSTATUS_CHAMADO() {
+		return STATUS_CHAMADO;
+	}
+
+	public void setSTATUS_CHAMADO(String sTATUS_CHAMADO) {
+		STATUS_CHAMADO = sTATUS_CHAMADO;
+	}
+
+	public Integer getNUMERO_CARTAO() {
+		return NUMERO_CARTAO;
+	}
+
+	public void setNUMERO_CARTAO(Integer nUMERO_CARTAO) {
+		NUMERO_CARTAO = nUMERO_CARTAO;
+	}
+
+	public String getCARTAO_ATIVO() {
+		return CARTAO_ATIVO;
+	}
+
+	public void setCARTAO_ATIVO(String cARTAO_ATIVO) {
+		CARTAO_ATIVO = cARTAO_ATIVO;
+	}
+
+	public String getDATA_ATIVACAO_CARTAO() {
+		return DATA_ATIVACAO_CARTAO;
+	}
+
+	public void setDATA_ATIVACAO_CARTAO(String dATA_ATIVACAO_CARTAO) {
+		DATA_ATIVACAO_CARTAO = dATA_ATIVACAO_CARTAO;
+	}
+
+	public String getSTATUS_1_COMPRA() {
+		return STATUS_1_COMPRA;
+	}
+
+	public void setSTATUS_1_COMPRA(String sTATUS_1_COMPRA) {
+		STATUS_1_COMPRA = sTATUS_1_COMPRA;
+	}
+
+	public String getDATA_1_COMPRA() {
+		return DATA_1_COMPRA;
+	}
+
+	public void setDATA_1_COMPRA(String dATA_1_COMPRA) {
+		DATA_1_COMPRA = dATA_1_COMPRA;
+	}
+
+	public String getDATA_VENCIMENTO_FATURA() {
+		return DATA_VENCIMENTO_FATURA;
+	}
+
+	public void setDATA_VENCIMENTO_FATURA(String dATA_VENCIMENTO_FATURA) {
+		DATA_VENCIMENTO_FATURA = dATA_VENCIMENTO_FATURA;
+	}
+
+	public String getFATURA_VENCIDA() {
+		return FATURA_VENCIDA;
+	}
+
+	public void setFATURA_VENCIDA(String fATURA_VENCIDA) {
+		FATURA_VENCIDA = fATURA_VENCIDA;
+	}
+
+	public String getDATA_ULTIMA_COMPRA() {
+		return DATA_ULTIMA_COMPRA;
+	}
+
+	public void setDATA_ULTIMA_COMPRA(String dATA_ULTIMA_COMPRA) {
+		DATA_ULTIMA_COMPRA = dATA_ULTIMA_COMPRA;
+	}
+
+	public String getPARCELA_ATUAL() {
+		return PARCELA_ATUAL;
+	}
+
+	public void setPARCELA_ATUAL(String pARCELA_ATUAL) {
+		PARCELA_ATUAL = pARCELA_ATUAL;
+	}
+
+	public String getDATA_ULTIMA_PARCELA() {
+		return DATA_ULTIMA_PARCELA;
+	}
+
+	public void setDATA_ULTIMA_PARCELA(String dATA_ULTIMA_PARCELA) {
+		DATA_ULTIMA_PARCELA = dATA_ULTIMA_PARCELA;
+	}
+
+	public String getSALDO_DISPONIVEL_ATUAL() {
+		return SALDO_DISPONIVEL_ATUAL;
+	}
+
+	public void setSALDO_DISPONIVEL_ATUAL(String sALDO_DISPONIVEL_ATUAL) {
+		SALDO_DISPONIVEL_ATUAL = sALDO_DISPONIVEL_ATUAL;
+	}
+
+	public String getCOMPRAS_PARCELADAS() {
+		return COMPRAS_PARCELADAS;
+	}
+
+	public void setCOMPRAS_PARCELADAS(String cOMPRAS_PARCELADAS) {
+		COMPRAS_PARCELADAS = cOMPRAS_PARCELADAS;
+	}
+
+	public String getSTATUS_FATURA_ATUAL() {
+		return STATUS_FATURA_ATUAL;
+	}
+
+	public void setSTATUS_FATURA_ATUAL(String sTATUS_FATURA_ATUAL) {
+		STATUS_FATURA_ATUAL = sTATUS_FATURA_ATUAL;
+	}
+
+	public String getR_CARTAO() {
+		return R_CARTAO;
+	}
+
+	public void setR_CARTAO(String r_CARTAO) {
+		R_CARTAO = r_CARTAO;
+	}
+
+	public String getF_CARTAO() {
+		return F_CARTAO;
+	}
+
+	public void setF_CARTAO(String f_CARTAO) {
+		F_CARTAO = f_CARTAO;
+	}
+
+	public String getV_CARTAO() {
+		return V_CARTAO;
+	}
+
+	public void setV_CARTAO(String v_CARTAO) {
+		V_CARTAO = v_CARTAO;
+	}
+
+	public String getCLASSIFICACAO_RFV_CARTAO() {
+		return CLASSIFICACAO_RFV_CARTAO;
+	}
+
+	public void setCLASSIFICACAO_RFV_CARTAO(String cLASSIFICACAO_RFV_CARTAO) {
+		CLASSIFICACAO_RFV_CARTAO = cLASSIFICACAO_RFV_CARTAO;
+	}
+
+	public String getCARTOES_ADICIONAIS_1() {
+		return CARTOES_ADICIONAIS_1;
+	}
+
+	public void setCARTOES_ADICIONAIS_1(String cARTOES_ADICIONAIS_1) {
+		CARTOES_ADICIONAIS_1 = cARTOES_ADICIONAIS_1;
+	}
+
+	public String getCARTOES_ADICIONAIS_2() {
+		return CARTOES_ADICIONAIS_2;
+	}
+
+	public void setCARTOES_ADICIONAIS_2(String cARTOES_ADICIONAIS_2) {
+		CARTOES_ADICIONAIS_2 = cARTOES_ADICIONAIS_2;
+	}
+
+	public String getVJ_CLIENTE() {
+		return VJ_CLIENTE;
+	}
+
+	public void setVJ_CLIENTE(String vJ_CLIENTE) {
+		VJ_CLIENTE = vJ_CLIENTE;
+	}
+
+	public String getVJ_DEIXOU() {
+		return VJ_DEIXOU;
+	}
+
+	public void setVJ_DEIXOU(String vJ_DEIXOU) {
+		VJ_DEIXOU = vJ_DEIXOU;
+	}
+
+	public String getVJ_TROCA_FINANCIAMENTO() {
+		return VJ_TROCA_FINANCIAMENTO;
+	}
+
+	public void setVJ_TROCA_FINANCIAMENTO(String vJ_TROCA_FINANCIAMENTO) {
+		VJ_TROCA_FINANCIAMENTO = vJ_TROCA_FINANCIAMENTO;
+	}
+
+	public String getVJ_PARCELA_ANTIGA() {
+		return VJ_PARCELA_ANTIGA;
+	}
+
+	public void setVJ_PARCELA_ANTIGA(String vJ_PARCELA_ANTIGA) {
+		VJ_PARCELA_ANTIGA = vJ_PARCELA_ANTIGA;
+	}
+
+	public String getVJ_PARCELA_NOVA() {
+		return VJ_PARCELA_NOVA;
+	}
+
+	public void setVJ_PARCELA_NOVA(String vJ_PARCELA_NOVA) {
+		VJ_PARCELA_NOVA = vJ_PARCELA_NOVA;
+	}
+
+	public String getVJ_ULTIMO_12_MESES() {
+		return VJ_ULTIMO_12_MESES;
+	}
+
+	public void setVJ_ULTIMO_12_MESES(String vJ_ULTIMO_12_MESES) {
+		VJ_ULTIMO_12_MESES = vJ_ULTIMO_12_MESES;
+	}
+
+	public String getVJ_ULTIMA_CLIENTE() {
+		return VJ_ULTIMA_CLIENTE;
+	}
+
+	public void setVJ_ULTIMA_CLIENTE(String vJ_ULTIMA_CLIENTE) {
+		VJ_ULTIMA_CLIENTE = vJ_ULTIMA_CLIENTE;
+	}
+
+	public String getSEGURO_CELULAR() {
+		return SEGURO_CELULAR;
+	}
+
+	public void setSEGURO_CELULAR(String sEGURO_CELULAR) {
+		SEGURO_CELULAR = sEGURO_CELULAR;
+	}
+
+	public String getINICIO_VIGENCIA_SEGURO_CELULAR() {
+		return INICIO_VIGENCIA_SEGURO_CELULAR;
+	}
+
+	public void setINICIO_VIGENCIA_SEGURO_CELULAR(String iNICIO_VIGENCIA_SEGURO_CELULAR) {
+		INICIO_VIGENCIA_SEGURO_CELULAR = iNICIO_VIGENCIA_SEGURO_CELULAR;
+	}
+
+	public String getFIM_VIGENCIA_SEGURO_CELULAR() {
+		return FIM_VIGENCIA_SEGURO_CELULAR;
+	}
+
+	public void setFIM_VIGENCIA_SEGURO_CELULAR(String fIM_VIGENCIA_SEGURO_CELULAR) {
+		FIM_VIGENCIA_SEGURO_CELULAR = fIM_VIGENCIA_SEGURO_CELULAR;
+	}
+
+	public String getSEGURO_ODONTOLOGICO() {
+		return SEGURO_ODONTOLOGICO;
+	}
+
+	public void setSEGURO_ODONTOLOGICO(String sEGURO_ODONTOLOGICO) {
+		SEGURO_ODONTOLOGICO = sEGURO_ODONTOLOGICO;
+	}
+
+	public String getINICIO_VIGENCIA_SEGURO_ODONTO() {
+		return INICIO_VIGENCIA_SEGURO_ODONTO;
+	}
+
+	public void setINICIO_VIGENCIA_SEGURO_ODONTO(String iNICIO_VIGENCIA_SEGURO_ODONTO) {
+		INICIO_VIGENCIA_SEGURO_ODONTO = iNICIO_VIGENCIA_SEGURO_ODONTO;
+	}
+
+	public String getFIM_VIGENCIA_SEGURO_ODONTO() {
+		return FIM_VIGENCIA_SEGURO_ODONTO;
+	}
+
+	public void setFIM_VIGENCIA_SEGURO_ODONTO(String fIM_VIGENCIA_SEGURO_ODONTO) {
+		FIM_VIGENCIA_SEGURO_ODONTO = fIM_VIGENCIA_SEGURO_ODONTO;
+	}
+
+	public String getSEGURO_CASA_TRANQUILA() {
+		return SEGURO_CASA_TRANQUILA;
+	}
+
+	public void setSEGURO_CASA_TRANQUILA(String sEGURO_CASA_TRANQUILA) {
+		SEGURO_CASA_TRANQUILA = sEGURO_CASA_TRANQUILA;
+	}
+
+	public String getINICIO_VIGENCIA_CASA_TRANQUILA() {
+		return INICIO_VIGENCIA_CASA_TRANQUILA;
+	}
+
+	public void setINICIO_VIGENCIA_CASA_TRANQUILA(String iNICIO_VIGENCIA_CASA_TRANQUILA) {
+		INICIO_VIGENCIA_CASA_TRANQUILA = iNICIO_VIGENCIA_CASA_TRANQUILA;
+	}
+
+	public String getFIM_VIGENCIA_CASA_TRANQUILA() {
+		return FIM_VIGENCIA_CASA_TRANQUILA;
+	}
+
+	public void setFIM_VIGENCIA_CASA_TRANQUILA(String fIM_VIGENCIA_CASA_TRANQUILA) {
+		FIM_VIGENCIA_CASA_TRANQUILA = fIM_VIGENCIA_CASA_TRANQUILA;
+	}
+
+	public String getSEGURO_PARCELA_PROTEGIDA() {
+		return SEGURO_PARCELA_PROTEGIDA;
+	}
+
+	public void setSEGURO_PARCELA_PROTEGIDA(String sEGURO_PARCELA_PROTEGIDA) {
+		SEGURO_PARCELA_PROTEGIDA = sEGURO_PARCELA_PROTEGIDA;
+	}
+
+	public String getINICIO_VIGENCIA_PARCELA_PROTEG() {
+		return INICIO_VIGENCIA_PARCELA_PROTEG;
+	}
+
+	public void setINICIO_VIGENCIA_PARCELA_PROTEG(String iNICIO_VIGENCIA_PARCELA_PROTEG) {
+		INICIO_VIGENCIA_PARCELA_PROTEG = iNICIO_VIGENCIA_PARCELA_PROTEG;
+	}
+
+	public String getFIM_VIGENCIA_PARCELA_PROTEGIDA() {
+		return FIM_VIGENCIA_PARCELA_PROTEGIDA;
+	}
+
+	public void setFIM_VIGENCIA_PARCELA_PROTEGIDA(String fIM_VIGENCIA_PARCELA_PROTEGIDA) {
+		FIM_VIGENCIA_PARCELA_PROTEGIDA = fIM_VIGENCIA_PARCELA_PROTEGIDA;
+	}
+
+	public Integer getVALOR_GASTO() {
+		return VALOR_GASTO;
+	}
+
+	public void setVALOR_GASTO(Integer vALOR_GASTO) {
+		VALOR_GASTO = vALOR_GASTO;
+	}
+
+	public Integer getQTD_TRANSACAO() {
+		return QTD_TRANSACAO;
+	}
+
+	public void setQTD_TRANSACAO(Integer qTD_TRANSACAO) {
+		QTD_TRANSACAO = qTD_TRANSACAO;
+	}
+
+	public String getLOJA_CADASTRO() {
+		return LOJA_CADASTRO;
+	}
+
+	public void setLOJA_CADASTRO(String lOJA_CADASTRO) {
+		LOJA_CADASTRO = lOJA_CADASTRO;
+	}
+
+	public String getGENERO() {
+		return GENERO;
+	}
+
+	public void setGENERO(String gENERO) {
+		GENERO = gENERO;
+	}
+
+	public String getCODIGO_CLIENTE_AVANTSYS() {
+		return CODIGO_CLIENTE_AVANTSYS;
+	}
+
+	public void setCODIGO_CLIENTE_AVANTSYS(String cODIGO_CLIENTE_AVANTSYS) {
+		CODIGO_CLIENTE_AVANTSYS = cODIGO_CLIENTE_AVANTSYS;
+	}
+
+	public String getATUALIZACLI() {
+		return ATUALIZACLI;
+	}
+
+	public void setATUALIZACLI(String aTUALIZACLI) {
+		ATUALIZACLI = aTUALIZACLI;
+	}
+
+	public String getATUALIZACLI2() {
+		return ATUALIZACLI2;
+	}
+
+	public void setATUALIZACLI2(String aTUALIZACLI2) {
+		ATUALIZACLI2 = aTUALIZACLI2;
+	}
+
+	public Integer getRIID() {
+		return RIID;
+	}
+
+	public void setRIID(Integer rIID) {
+		RIID = rIID;
+	}
+
+	public DB_VucModel() {
+
+	}
+
+	public DB_VucModel(Integer cODIGO_CLIENTE, String pRIMEIRO_NOME, String uLTIMO_NOME, String eMAIL,
+			String dDD_TELEFONE, String tELEFONE, String tIPO_TELEFONE, String cPF, String dATA_NASCIMENTO,
+			Integer iDADE, String tIPO_ENDERECO, String tIPO_LOGRADOURO, String lOGRADOURO, String nUMERO,
+			String cOMPLEMENTO, String bAIRRO, String cIDADE, String eSTADO, String cEP, String cATEGORIA_PREFERIDA_1,
+			String cATEGORIA_PREFERIDA_2, String cATEGORIA_PREFERIDA_3, String sUBCATEGORIA_PREFERIDA_1,
+			String sUBCATEGORIA_PREFERIDA_2, String sUBCATEGORIA_PREFERIDA_3, String gENERO_PREFERENCIAL_1,
+			String gENERO_PREFERENCIAL_2, String gENERO_PREFERENCIAL_3, String eSTILO_PREFERENCIAL_1,
+			String eSTILO_PREFERENCIAL_2, String eSTILO_PREFERENCIAL_3, String r_TRANSACAO, String f_TRANSACAO,
+			String v_TRANSACAO, String cLASSIFICACAO_RFV_TRANSACAO, String tKM, String pAGAMENTO_PREFERENCIAL,
+			String nUMERO_CHAMADO, String tIPO_CHAMADO, String sTATUS_CHAMADO, Integer nUMERO_CARTAO,
+			String cARTAO_ATIVO, String dATA_ATIVACAO_CARTAO, String sTATUS_1_COMPRA, String dATA_1_COMPRA,
+			String dATA_VENCIMENTO_FATURA, String fATURA_VENCIDA, String dATA_ULTIMA_COMPRA, String pARCELA_ATUAL,
+			String dATA_ULTIMA_PARCELA, String sALDO_DISPONIVEL_ATUAL, String cOMPRAS_PARCELADAS,
+			String sTATUS_FATURA_ATUAL, String r_CARTAO, String f_CARTAO, String v_CARTAO,
+			String cLASSIFICACAO_RFV_CARTAO, String cARTOES_ADICIONAIS_1, String cARTOES_ADICIONAIS_2,
+			String vJ_CLIENTE, String vJ_DEIXOU, String vJ_TROCA_FINANCIAMENTO, String vJ_PARCELA_ANTIGA,
+			String vJ_PARCELA_NOVA, String vJ_ULTIMO_12_MESES, String vJ_ULTIMA_CLIENTE, String sEGURO_CELULAR,
+			String iNICIO_VIGENCIA_SEGURO_CELULAR, String fIM_VIGENCIA_SEGURO_CELULAR, String sEGURO_ODONTOLOGICO,
+			String iNICIO_VIGENCIA_SEGURO_ODONTO, String fIM_VIGENCIA_SEGURO_ODONTO, String sEGURO_CASA_TRANQUILA,
+			String iNICIO_VIGENCIA_CASA_TRANQUILA, String fIM_VIGENCIA_CASA_TRANQUILA, String sEGURO_PARCELA_PROTEGIDA,
+			String iNICIO_VIGENCIA_PARCELA_PROTEG, String fIM_VIGENCIA_PARCELA_PROTEGIDA, Integer vALOR_GASTO,
+			Integer qTD_TRANSACAO, String lOJA_CADASTRO, String gENERO, String cODIGO_CLIENTE_AVANTSYS,
+			String aTUALIZACLI, String aTUALIZACLI2, Integer rIID) {
+		super();
+		CODIGO_CLIENTE = cODIGO_CLIENTE;
+		PRIMEIRO_NOME = pRIMEIRO_NOME;
+		ULTIMO_NOME = uLTIMO_NOME;
+		EMAIL = eMAIL;
+		DDD_TELEFONE = dDD_TELEFONE;
+		TELEFONE = tELEFONE;
+		TIPO_TELEFONE = tIPO_TELEFONE;
+		CPF = cPF;
+		DATA_NASCIMENTO = dATA_NASCIMENTO;
+		IDADE = iDADE;
+		TIPO_ENDERECO = tIPO_ENDERECO;
+		TIPO_LOGRADOURO = tIPO_LOGRADOURO;
+		LOGRADOURO = lOGRADOURO;
+		NUMERO = nUMERO;
+		COMPLEMENTO = cOMPLEMENTO;
+		BAIRRO = bAIRRO;
+		CIDADE = cIDADE;
+		ESTADO = eSTADO;
+		CEP = cEP;
+		CATEGORIA_PREFERIDA_1 = cATEGORIA_PREFERIDA_1;
+		CATEGORIA_PREFERIDA_2 = cATEGORIA_PREFERIDA_2;
+		CATEGORIA_PREFERIDA_3 = cATEGORIA_PREFERIDA_3;
+		SUBCATEGORIA_PREFERIDA_1 = sUBCATEGORIA_PREFERIDA_1;
+		SUBCATEGORIA_PREFERIDA_2 = sUBCATEGORIA_PREFERIDA_2;
+		SUBCATEGORIA_PREFERIDA_3 = sUBCATEGORIA_PREFERIDA_3;
+		GENERO_PREFERENCIAL_1 = gENERO_PREFERENCIAL_1;
+		GENERO_PREFERENCIAL_2 = gENERO_PREFERENCIAL_2;
+		GENERO_PREFERENCIAL_3 = gENERO_PREFERENCIAL_3;
+		ESTILO_PREFERENCIAL_1 = eSTILO_PREFERENCIAL_1;
+		ESTILO_PREFERENCIAL_2 = eSTILO_PREFERENCIAL_2;
+		ESTILO_PREFERENCIAL_3 = eSTILO_PREFERENCIAL_3;
+		R_TRANSACAO = r_TRANSACAO;
+		F_TRANSACAO = f_TRANSACAO;
+		V_TRANSACAO = v_TRANSACAO;
+		CLASSIFICACAO_RFV_TRANSACAO = cLASSIFICACAO_RFV_TRANSACAO;
+		TKM = tKM;
+		PAGAMENTO_PREFERENCIAL = pAGAMENTO_PREFERENCIAL;
+		NUMERO_CHAMADO = nUMERO_CHAMADO;
+		TIPO_CHAMADO = tIPO_CHAMADO;
+		STATUS_CHAMADO = sTATUS_CHAMADO;
+		NUMERO_CARTAO = nUMERO_CARTAO;
+		CARTAO_ATIVO = cARTAO_ATIVO;
+		DATA_ATIVACAO_CARTAO = dATA_ATIVACAO_CARTAO;
+		STATUS_1_COMPRA = sTATUS_1_COMPRA;
+		DATA_1_COMPRA = dATA_1_COMPRA;
+		DATA_VENCIMENTO_FATURA = dATA_VENCIMENTO_FATURA;
+		FATURA_VENCIDA = fATURA_VENCIDA;
+		DATA_ULTIMA_COMPRA = dATA_ULTIMA_COMPRA;
+		PARCELA_ATUAL = pARCELA_ATUAL;
+		DATA_ULTIMA_PARCELA = dATA_ULTIMA_PARCELA;
+		SALDO_DISPONIVEL_ATUAL = sALDO_DISPONIVEL_ATUAL;
+		COMPRAS_PARCELADAS = cOMPRAS_PARCELADAS;
+		STATUS_FATURA_ATUAL = sTATUS_FATURA_ATUAL;
+		R_CARTAO = r_CARTAO;
+		F_CARTAO = f_CARTAO;
+		V_CARTAO = v_CARTAO;
+		CLASSIFICACAO_RFV_CARTAO = cLASSIFICACAO_RFV_CARTAO;
+		CARTOES_ADICIONAIS_1 = cARTOES_ADICIONAIS_1;
+		CARTOES_ADICIONAIS_2 = cARTOES_ADICIONAIS_2;
+		VJ_CLIENTE = vJ_CLIENTE;
+		VJ_DEIXOU = vJ_DEIXOU;
+		VJ_TROCA_FINANCIAMENTO = vJ_TROCA_FINANCIAMENTO;
+		VJ_PARCELA_ANTIGA = vJ_PARCELA_ANTIGA;
+		VJ_PARCELA_NOVA = vJ_PARCELA_NOVA;
+		VJ_ULTIMO_12_MESES = vJ_ULTIMO_12_MESES;
+		VJ_ULTIMA_CLIENTE = vJ_ULTIMA_CLIENTE;
+		SEGURO_CELULAR = sEGURO_CELULAR;
+		INICIO_VIGENCIA_SEGURO_CELULAR = iNICIO_VIGENCIA_SEGURO_CELULAR;
+		FIM_VIGENCIA_SEGURO_CELULAR = fIM_VIGENCIA_SEGURO_CELULAR;
+		SEGURO_ODONTOLOGICO = sEGURO_ODONTOLOGICO;
+		INICIO_VIGENCIA_SEGURO_ODONTO = iNICIO_VIGENCIA_SEGURO_ODONTO;
+		FIM_VIGENCIA_SEGURO_ODONTO = fIM_VIGENCIA_SEGURO_ODONTO;
+		SEGURO_CASA_TRANQUILA = sEGURO_CASA_TRANQUILA;
+		INICIO_VIGENCIA_CASA_TRANQUILA = iNICIO_VIGENCIA_CASA_TRANQUILA;
+		FIM_VIGENCIA_CASA_TRANQUILA = fIM_VIGENCIA_CASA_TRANQUILA;
+		SEGURO_PARCELA_PROTEGIDA = sEGURO_PARCELA_PROTEGIDA;
+		INICIO_VIGENCIA_PARCELA_PROTEG = iNICIO_VIGENCIA_PARCELA_PROTEG;
+		FIM_VIGENCIA_PARCELA_PROTEGIDA = fIM_VIGENCIA_PARCELA_PROTEGIDA;
+		VALOR_GASTO = vALOR_GASTO;
+		QTD_TRANSACAO = qTD_TRANSACAO;
+		LOJA_CADASTRO = lOJA_CADASTRO;
+		GENERO = gENERO;
+		CODIGO_CLIENTE_AVANTSYS = cODIGO_CLIENTE_AVANTSYS;
+		ATUALIZACLI = aTUALIZACLI;
+		ATUALIZACLI2 = aTUALIZACLI2;
+		RIID = rIID;
+	}
+
+	@Override
+	public String toString() {
+		return GsonConverter.toJson(this);
+	}
+}
